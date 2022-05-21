@@ -1,0 +1,3461 @@
+[
+ {
+  "question": "how many ANAPPLE products did customers buy between 2015-01-01 and 2015-12-31",
+  "query": "select distinct sum ( T3.QUANTITY )  from MANUFACTURERS AS T1 JOIN PRODUCTS AS T2 on T1.MANUFACTURER_ID  =  T2.MANUFACTURER_ID JOIN SALES_DETAILS AS T3 on T2.PRODUCT_ID  =  T3.PRODUCT_ID JOIN SALES AS T4 on T3.SALES_ID  =  T4.SALES_ID where T4.DATE  >=  '2015-01-01' and T4.DATE  <=  '2015-12-31' and T1.NAME  =  'ANAPPLE'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "sum",
+   "(",
+   "T3.QUANTITY",
+   ")",
+   "from",
+   "MANUFACTURERS",
+   "AS",
+   "T1",
+   "JOIN",
+   "PRODUCTS",
+   "AS",
+   "T2",
+   "on",
+   "T1.MANUFACTURER_ID",
+   "=",
+   "T2.MANUFACTURER_ID",
+   "JOIN",
+   "SALES_DETAILS",
+   "AS",
+   "T3",
+   "on",
+   "T2.PRODUCT_ID",
+   "=",
+   "T3.PRODUCT_ID",
+   "JOIN",
+   "SALES",
+   "AS",
+   "T4",
+   "on",
+   "T3.SALES_ID",
+   "=",
+   "T4.SALES_ID",
+   "where",
+   "T4.DATE",
+   ">",
+   "=",
+   "2015-01-01",
+   "and",
+   "T4.DATE",
+   "<",
+   "=",
+   "2015-12-31",
+   "and",
+   "T1.NAME",
+   "=",
+   "ANAPPLE"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "how",
+   "many",
+   "ANAPPLE",
+   "product",
+   "did",
+   "customer",
+   "buy",
+   "between",
+   "year",
+   "-",
+   "01",
+   "-",
+   "01",
+   "and",
+   "year",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "how",
+   "many",
+   "ANAPPLE",
+   "products",
+   "did",
+   "customers",
+   "buy",
+   "between",
+   "2015",
+   "-",
+   "01",
+   "-",
+   "01",
+   "and",
+   "2015",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "ANAPPLE"
+   ],
+   [
+    "product"
+   ],
+   [
+    "did"
+   ],
+   [
+    "customer"
+   ],
+   [
+    "buy"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "12"
+   ],
+   [
+    "-"
+   ],
+   [
+    "31"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "ANAPPLE",
+    "NN"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "did",
+    "VBD"
+   ],
+   [
+    "customer",
+    "NN"
+   ],
+   [
+    "buy",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2015",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2015",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "12",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "31",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2015-01-01",
+   "2015-12-31",
+   "ANAPPLE"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      1
+     ],
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      5
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        5,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       13,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        12,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       22,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        23,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       16,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        24,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2015-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2015-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "ANAPPLE",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what are the types of products that were sold between 2012-10-20 and 2012-10-20 in New York",
+  "query": "select distinct T4.TYPE from SHOPS AS T1 JOIN SALES AS T2 on T1.SHOP_ID  =  T2.SHOP_ID JOIN SALES_DETAILS AS T3 on T2.SALES_ID  =  T3.SALES_ID JOIN PRODUCTS AS T4 on T3.PRODUCT_ID  =  T4.PRODUCT_ID where T2.DATE  >=  '2012-10-20' and T2.DATE  <=  '2012-10-20' and T1.ADDRESS  =  'New York'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "T4.TYPE",
+   "from",
+   "SHOPS",
+   "AS",
+   "T1",
+   "JOIN",
+   "SALES",
+   "AS",
+   "T2",
+   "on",
+   "T1.SHOP_ID",
+   "=",
+   "T2.SHOP_ID",
+   "JOIN",
+   "SALES_DETAILS",
+   "AS",
+   "T3",
+   "on",
+   "T2.SALES_ID",
+   "=",
+   "T3.SALES_ID",
+   "JOIN",
+   "PRODUCTS",
+   "AS",
+   "T4",
+   "on",
+   "T3.PRODUCT_ID",
+   "=",
+   "T4.PRODUCT_ID",
+   "where",
+   "T2.DATE",
+   ">",
+   "=",
+   "2012-10-20",
+   "and",
+   "T2.DATE",
+   "<",
+   "=",
+   "2012-10-20",
+   "and",
+   "T1.ADDRESS",
+   "=",
+   "New",
+   "York"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "are",
+   "type",
+   "of",
+   "product",
+   "that",
+   "were",
+   "sold",
+   "between",
+   "year",
+   "-",
+   "10",
+   "-",
+   "20",
+   "and",
+   "year",
+   "-",
+   "10",
+   "-",
+   "20",
+   "in",
+   "new",
+   "york"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "what",
+   "are",
+   "the",
+   "types",
+   "of",
+   "products",
+   "that",
+   "were",
+   "sold",
+   "between",
+   "2012",
+   "-",
+   "10",
+   "-",
+   "20",
+   "and",
+   "2012",
+   "-",
+   "10",
+   "-",
+   "20",
+   "in",
+   "New",
+   "York"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "are"
+   ],
+   [
+    "type"
+   ],
+   [
+    "of"
+   ],
+   [
+    "product"
+   ],
+   [
+    "that"
+   ],
+   [
+    "were"
+   ],
+   [
+    "sold"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "10"
+   ],
+   [
+    "-"
+   ],
+   [
+    "20"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "10"
+   ],
+   [
+    "-"
+   ],
+   [
+    "20"
+   ],
+   [
+    "in"
+   ],
+   [
+    "new"
+   ],
+   [
+    "york"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WDT"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "type",
+    "JJ"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "that",
+    "WDT"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "sold",
+    "VBN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2012",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "10",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "20",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2012",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "10",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "20",
+    "CD"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "new",
+    "JJ"
+   ],
+   [
+    "york",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2012-10-20",
+   "2012-10-20",
+   "New York"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      3
+     ],
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      4
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        9,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       19,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        16,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       23,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        22,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       12,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        14,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2012-10-20",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2012-10-20",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       11,
+       false
+      ],
+      null
+     ],
+     "New York",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "show sales between 2016-07-01 and 2016-09-30",
+  "query": "select distinct sum ( SALES.SUM_TOTAL )  from SALES where SALES.DATE  >=  '2016-07-01' and SALES.DATE  <=  '2016-09-30'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "sum",
+   "(",
+   "SALES.SUM_TOTAL",
+   ")",
+   "from",
+   "SALES",
+   "where",
+   "SALES.DATE",
+   ">",
+   "=",
+   "2016-07-01",
+   "and",
+   "SALES.DATE",
+   "<",
+   "=",
+   "2016-09-30"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "show",
+   "sale",
+   "between",
+   "year",
+   "-",
+   "07",
+   "-",
+   "01",
+   "and",
+   "year",
+   "-",
+   "09",
+   "-",
+   "30"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "show",
+   "sales",
+   "between",
+   "2016",
+   "-",
+   "07",
+   "-",
+   "01",
+   "and",
+   "2016",
+   "-",
+   "09",
+   "-",
+   "30"
+  ],
+  "question_arg": [
+   [
+    "show"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "07"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "09"
+   ],
+   [
+    "-"
+   ],
+   [
+    "30"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "show",
+    "NN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2016",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "07",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2016",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "09",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "30",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2016-07-01",
+   "2016-09-30"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      5
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        21,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2016-07-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2016-09-30",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "which products are sold from 2011-01-01 to 2013-02-28",
+  "query": "select distinct T2.PRODUCT_ID from SALES AS T1 JOIN SALES_DETAILS AS T2 on T1.SALES_ID  =  T2.SALES_ID where T1.DATE  >=  '2011-01-01' and T1.DATE  <=  '2013-02-28'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "T2.PRODUCT_ID",
+   "from",
+   "SALES",
+   "AS",
+   "T1",
+   "JOIN",
+   "SALES_DETAILS",
+   "AS",
+   "T2",
+   "on",
+   "T1.SALES_ID",
+   "=",
+   "T2.SALES_ID",
+   "where",
+   "T1.DATE",
+   ">",
+   "=",
+   "2011-01-01",
+   "and",
+   "T1.DATE",
+   "<",
+   "=",
+   "2013-02-28"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "which",
+   "product",
+   "are",
+   "sold",
+   "from",
+   "year",
+   "-",
+   "01",
+   "-",
+   "01",
+   "to",
+   "year",
+   "-",
+   "02",
+   "-",
+   "28"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "which",
+   "products",
+   "are",
+   "sold",
+   "from",
+   "2011",
+   "-",
+   "01",
+   "-",
+   "01",
+   "to",
+   "2013",
+   "-",
+   "02",
+   "-",
+   "28"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "product"
+   ],
+   [
+    "are"
+   ],
+   [
+    "sold"
+   ],
+   [
+    "from"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "to"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "02"
+   ],
+   [
+    "-"
+   ],
+   [
+    "28"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "sold",
+    "VBN"
+   ],
+   [
+    "from",
+    "IN"
+   ],
+   [
+    "2011",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "to",
+    "TO"
+   ],
+   [
+    "2013",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "02",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "28",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2011-01-01",
+   "2013-02-28"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      6
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        16,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       23,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        22,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2011-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2013-02-28",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what is the total amount of VERZN sales between 2016-01-01 and 2016-12-31",
+  "query": "select distinct sum ( T2.SUM_TOTAL )  from VENDORS AS T1 JOIN SALES AS T2 on T1.VENDOR_ID  =  T2.VENDOR_ID where T1.NAME  =  'VERZN' and T2.DATE  >=  '2016-01-01' and T2.DATE  <=  '2016-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "sum",
+   "(",
+   "T2.SUM_TOTAL",
+   ")",
+   "from",
+   "VENDORS",
+   "AS",
+   "T1",
+   "JOIN",
+   "SALES",
+   "AS",
+   "T2",
+   "on",
+   "T1.VENDOR_ID",
+   "=",
+   "T2.VENDOR_ID",
+   "where",
+   "T1.NAME",
+   "=",
+   "VERZN",
+   "and",
+   "T2.DATE",
+   ">",
+   "=",
+   "2016-01-01",
+   "and",
+   "T2.DATE",
+   "<",
+   "=",
+   "2016-12-31"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "is",
+   "total",
+   "amount",
+   "of",
+   "VERZN",
+   "sale",
+   "between",
+   "year",
+   "-",
+   "01",
+   "-",
+   "01",
+   "and",
+   "year",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "what",
+   "is",
+   "the",
+   "total",
+   "amount",
+   "of",
+   "VERZN",
+   "sales",
+   "between",
+   "2016",
+   "-",
+   "01",
+   "-",
+   "01",
+   "and",
+   "2016",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "is"
+   ],
+   [
+    "total"
+   ],
+   [
+    "amount"
+   ],
+   [
+    "of"
+   ],
+   [
+    "VERZN"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "12"
+   ],
+   [
+    "-"
+   ],
+   [
+    "31"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "is",
+    "VBZ"
+   ],
+   [
+    "total",
+    "JJ"
+   ],
+   [
+    "amount",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "VERZN",
+    "JJ"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2016",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2016",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "12",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "31",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "VERZN",
+   "2016-01-01",
+   "2016-12-31"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      2
+     ],
+     [
+      "table_unit",
+      5
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        7,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       18,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        21,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       8,
+       false
+      ],
+      null
+     ],
+     "VERZN",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2016-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2016-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "how many times did Willie buy IFONE after 2012-12-31",
+  "query": "select distinct count ( T3.QUANTITY )  from CUSTOMERS AS T1 JOIN SALES AS T2 on T1.CUSTOMER_ID  =  T2.CUSTOMER_ID JOIN SALES_DETAILS AS T3 on T2.SALES_ID  =  T3.SALES_ID JOIN PRODUCTS AS T4 on T3.PRODUCT_ID  =  T4.PRODUCT_ID where T4.TYPE  =  'IFONE' and T2.DATE  >  '2012-12-31' and T1.NAME  =  'Willie'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "count",
+   "(",
+   "T3.QUANTITY",
+   ")",
+   "from",
+   "CUSTOMERS",
+   "AS",
+   "T1",
+   "JOIN",
+   "SALES",
+   "AS",
+   "T2",
+   "on",
+   "T1.CUSTOMER_ID",
+   "=",
+   "T2.CUSTOMER_ID",
+   "JOIN",
+   "SALES_DETAILS",
+   "AS",
+   "T3",
+   "on",
+   "T2.SALES_ID",
+   "=",
+   "T3.SALES_ID",
+   "JOIN",
+   "PRODUCTS",
+   "AS",
+   "T4",
+   "on",
+   "T3.PRODUCT_ID",
+   "=",
+   "T4.PRODUCT_ID",
+   "where",
+   "T4.TYPE",
+   "=",
+   "IFONE",
+   "and",
+   "T2.DATE",
+   ">",
+   "2012-12-31",
+   "and",
+   "T1.NAME",
+   "=",
+   "Willie"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "how",
+   "many",
+   "time",
+   "did",
+   "willie",
+   "buy",
+   "IFONE",
+   "after",
+   "year",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "how",
+   "many",
+   "times",
+   "did",
+   "Willie",
+   "buy",
+   "IFONE",
+   "after",
+   "2012",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "time"
+   ],
+   [
+    "did"
+   ],
+   [
+    "willie"
+   ],
+   [
+    "buy"
+   ],
+   [
+    "IFONE"
+   ],
+   [
+    "after"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "12"
+   ],
+   [
+    "-"
+   ],
+   [
+    "31"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "time",
+    "NN"
+   ],
+   [
+    "did",
+    "VBD"
+   ],
+   [
+    "willie",
+    "VB"
+   ],
+   [
+    "buy",
+    "VB"
+   ],
+   [
+    "IFONE",
+    "NN"
+   ],
+   [
+    "after",
+    "IN"
+   ],
+   [
+    "2012",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "12",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "31",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "IFONE",
+   "2012-12-31",
+   "Willie"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ],
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      4
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       17,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        16,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       23,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        22,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       12,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      3,
+      [
+       0,
+       [
+        0,
+        24,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "IFONE",
+     null
+    ],
+    "and",
+    [
+     false,
+     3,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2012-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       3,
+       false
+      ],
+      null
+     ],
+     "Willie",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what is GALAZY sales between 2014-01-01 and 2014-12-31",
+  "query": "select distinct sum ( T3.SUM_TOTAL )  from PRODUCTS AS T1 JOIN SALES_DETAILS AS T2 on T1.PRODUCT_ID  =  T2.PRODUCT_ID JOIN SALES AS T3 on T2.SALES_ID  =  T3.SALES_ID where T1.TYPE  =  'GALAZY' and T3.DATE  >=  '2014-01-01' and T3.DATE  <=  '2014-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "sum",
+   "(",
+   "T3.SUM_TOTAL",
+   ")",
+   "from",
+   "PRODUCTS",
+   "AS",
+   "T1",
+   "JOIN",
+   "SALES_DETAILS",
+   "AS",
+   "T2",
+   "on",
+   "T1.PRODUCT_ID",
+   "=",
+   "T2.PRODUCT_ID",
+   "JOIN",
+   "SALES",
+   "AS",
+   "T3",
+   "on",
+   "T2.SALES_ID",
+   "=",
+   "T3.SALES_ID",
+   "where",
+   "T1.TYPE",
+   "=",
+   "GALAZY",
+   "and",
+   "T3.DATE",
+   ">",
+   "=",
+   "2014-01-01",
+   "and",
+   "T3.DATE",
+   "<",
+   "=",
+   "2014-12-31"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "is",
+   "GALAZY",
+   "sale",
+   "between",
+   "year",
+   "-",
+   "01",
+   "-",
+   "01",
+   "and",
+   "year",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "what",
+   "is",
+   "GALAZY",
+   "sales",
+   "between",
+   "2014",
+   "-",
+   "01",
+   "-",
+   "01",
+   "and",
+   "2014",
+   "-",
+   "12",
+   "-",
+   "31"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "is"
+   ],
+   [
+    "GALAZY"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "-"
+   ],
+   [
+    "01"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ],
+   [
+    "-"
+   ],
+   [
+    "12"
+   ],
+   [
+    "-"
+   ],
+   [
+    "31"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "is",
+    "VBZ"
+   ],
+   [
+    "GALAZY",
+    "JJ"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2014",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "01",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2014",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "12",
+    "CD"
+   ],
+   [
+    "-",
+    ":"
+   ],
+   [
+    "31",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "GALAZY",
+   "2014-01-01",
+   "2014-12-31"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      5
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        12,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       22,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        23,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       16,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        21,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "GALAZY",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2014-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       20,
+       false
+      ],
+      null
+     ],
+     "2014-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ }
+]

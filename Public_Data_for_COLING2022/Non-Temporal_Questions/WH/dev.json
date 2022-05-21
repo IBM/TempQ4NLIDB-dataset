@@ -1,0 +1,5554 @@
+[
+ {
+  "question": "who bought IFONE in BESTBYU",
+  "query": "SELECT distinct T1.name FROM customers AS T1 JOIN sales AS T2 ON T1.customer_id  =  T2.customer_id JOIN sales_details AS T3 ON T2.sales_id  =  T3.sales_id JOIN shops AS T4 ON T2.shop_id  =  T4.shop_id JOIN products AS T5 ON T3.product_id  =  T5.product_id WHERE T4.name  =  'BESTBYU' AND T5.type  =  'IFONE'",
+  "query_tok": [
+   "SELECT",
+   "distinct",
+   "T1.name",
+   "FROM",
+   "customers",
+   "AS",
+   "T1",
+   "JOIN",
+   "sales",
+   "AS",
+   "T2",
+   "ON",
+   "T1.customer_id",
+   "=",
+   "T2.customer_id",
+   "JOIN",
+   "sales_details",
+   "AS",
+   "T3",
+   "ON",
+   "T2.sales_id",
+   "=",
+   "T3.sales_id",
+   "JOIN",
+   "shops",
+   "AS",
+   "T4",
+   "ON",
+   "T2.shop_id",
+   "=",
+   "T4.shop_id",
+   "JOIN",
+   "products",
+   "AS",
+   "T5",
+   "ON",
+   "T3.product_id",
+   "=",
+   "T5.product_id",
+   "WHERE",
+   "T4.name",
+   "=",
+   "BESTBYU",
+   "AND",
+   "T5.type",
+   "=",
+   "IFONE"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "who",
+   "bought",
+   "IFONE",
+   "in",
+   "BESTBYU"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "who",
+   "bought",
+   "IFONE",
+   "in",
+   "BESTBYU"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "bought"
+   ],
+   [
+    "IFONE"
+   ],
+   [
+    "in"
+   ],
+   [
+    "BESTBYU"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "bought",
+    "VBD"
+   ],
+   [
+    "IFONE",
+    "NN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "BESTBYU",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "BESTBYU",
+   "IFONE"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ],
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      3
+     ],
+     [
+      "table_unit",
+      4
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       17,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        16,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       23,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        19,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        22,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       12,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        3,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       10,
+       false
+      ],
+      null
+     ],
+     "BESTBYU",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "IFONE",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who bought WINDOOWS in BESTBYU",
+  "query": "SELECT T1.name FROM customers AS T1 JOIN sales AS T2 ON T1.customer_id  =  T2.customer_id JOIN sales_details AS T3 ON T2.sales_id  =  T3.sales_id JOIN products AS T4 on T4.product_id  =  T3.product_id JOIN shops as T5 ON T2.shop_id  =  T5.shop_id WHERE T4.type  =  'WINDOOWS' AND T5.name  =  'BESTBYU'",
+  "query_tok": [
+   "SELECT",
+   "T1.name",
+   "FROM",
+   "customers",
+   "AS",
+   "T1",
+   "JOIN",
+   "sales",
+   "AS",
+   "T2",
+   "ON",
+   "T1.customer_id",
+   "=",
+   "T2.customer_id",
+   "JOIN",
+   "sales_details",
+   "AS",
+   "T3",
+   "ON",
+   "T2.sales_id",
+   "=",
+   "T3.sales_id",
+   "JOIN",
+   "products",
+   "AS",
+   "T4",
+   "on",
+   "T4.product_id",
+   "=",
+   "T3.product_id",
+   "JOIN",
+   "shops",
+   "as",
+   "T5",
+   "ON",
+   "T2.shop_id",
+   "=",
+   "T5.shop_id",
+   "WHERE",
+   "T4.type",
+   "=",
+   "WINDOOWS",
+   "AND",
+   "T5.name",
+   "=",
+   "BESTBYU"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "who",
+   "bought",
+   "WINDOOWS",
+   "in",
+   "BESTBYU"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "Who",
+   "bought",
+   "WINDOOWS",
+   "in",
+   "BESTBYU"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "bought"
+   ],
+   [
+    "WINDOOWS"
+   ],
+   [
+    "in"
+   ],
+   [
+    "BESTBYU"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "bought",
+    "VBD"
+   ],
+   [
+    "WINDOOWS",
+    "NN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "BESTBYU",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "WINDOOWS",
+   "BESTBYU"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ],
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      3
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       17,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        16,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       23,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        12,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       22,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        19,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        3,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "WINDOOWS",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       10,
+       false
+      ],
+      null
+     ],
+     "BESTBYU",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "What phone number does Mary has?",
+  "query": "SELECT T1.phone_nr FROM customers AS T1 WHERE T1.name  =  'Mary'",
+  "query_tok": [
+   "SELECT",
+   "T1.phone_nr",
+   "FROM",
+   "customers",
+   "AS",
+   "T1",
+   "WHERE",
+   "T1.name",
+   "=",
+   "Mary"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "phone",
+   "number",
+   "doe",
+   "mary",
+   "ha",
+   "?"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "What",
+   "phone",
+   "number",
+   "does",
+   "Mary",
+   "has",
+   "?"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "phone"
+   ],
+   [
+    "number"
+   ],
+   [
+    "doe"
+   ],
+   [
+    "mary"
+   ],
+   [
+    "ha"
+   ],
+   [
+    "?"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "phone",
+    "NN"
+   ],
+   [
+    "number",
+    "NN"
+   ],
+   [
+    "doe",
+    "NN"
+   ],
+   [
+    "mary",
+    "JJ"
+   ],
+   [
+    "ha",
+    "NN"
+   ],
+   [
+    "?",
+    "."
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Mary"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        2,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       3,
+       false
+      ],
+      null
+     ],
+     "Mary",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "show price, type, address of the shop of the products that are in stock with a price higher than 300 in BESTBYU",
+  "query": "SELECT T1.type , T1.price, T3.address FROM products AS T1 JOIN stock AS T2 ON T1.product_id  =  T2.product_id JOIN shops AS T3 ON T2.shop_id  =  T3.shop_id WHERE T1.price  >=  300 AND T3.name  =  'BESTBYU'",
+  "query_tok": [
+   "SELECT",
+   "T1.type",
+   ",",
+   "T1.price,",
+   "T3.address",
+   "FROM",
+   "products",
+   "AS",
+   "T1",
+   "JOIN",
+   "stock",
+   "AS",
+   "T2",
+   "ON",
+   "T1.product_id",
+   "=",
+   "T2.product_id",
+   "JOIN",
+   "shops",
+   "AS",
+   "T3",
+   "ON",
+   "T2.shop_id",
+   "=",
+   "T3.shop_id",
+   "WHERE",
+   "T1.price",
+   ">",
+   "=",
+   "300",
+   "AND",
+   "T3.name",
+   "=",
+   "BESTBYU"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "show",
+   "price",
+   ",",
+   "type",
+   ",",
+   "address",
+   "of",
+   "shop",
+   "of",
+   "product",
+   "that",
+   "are",
+   "in",
+   "stock",
+   "with",
+   "a",
+   "price",
+   "higher",
+   "than",
+   "300",
+   "in",
+   "BESTBYU"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "show",
+   "price",
+   ",",
+   "type",
+   ",",
+   "address",
+   "of",
+   "the",
+   "shop",
+   "of",
+   "the",
+   "products",
+   "that",
+   "are",
+   "in",
+   "stock",
+   "with",
+   "a",
+   "price",
+   "higher",
+   "than",
+   "300",
+   "in",
+   "BESTBYU"
+  ],
+  "question_arg": [
+   [
+    "show"
+   ],
+   [
+    "price"
+   ],
+   [
+    ","
+   ],
+   [
+    "type"
+   ],
+   [
+    ","
+   ],
+   [
+    "address"
+   ],
+   [
+    "of"
+   ],
+   [
+    "shop"
+   ],
+   [
+    "of"
+   ],
+   [
+    "product"
+   ],
+   [
+    "that"
+   ],
+   [
+    "are"
+   ],
+   [
+    "in"
+   ],
+   [
+    "stock"
+   ],
+   [
+    "with"
+   ],
+   [
+    "a"
+   ],
+   [
+    "price"
+   ],
+   [
+    "higher"
+   ],
+   [
+    "than"
+   ],
+   [
+    "300"
+   ],
+   [
+    "in"
+   ],
+   [
+    "BESTBYU"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "MORE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "show",
+    "NN"
+   ],
+   [
+    "price",
+    "NN"
+   ],
+   [
+    ",",
+    ","
+   ],
+   [
+    "type",
+    "NN"
+   ],
+   [
+    ",",
+    ","
+   ],
+   [
+    "address",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "shop",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "that",
+    "WDT"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "stock",
+    "NN"
+   ],
+   [
+    "with",
+    "IN"
+   ],
+   [
+    "a",
+    "DT"
+   ],
+   [
+    "price",
+    "NN"
+   ],
+   [
+    "higher",
+    "JJR"
+   ],
+   [
+    "than",
+    "IN"
+   ],
+   [
+    "300",
+    "CD"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "BESTBYU",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "BESTBYU",
+   "300"
+  ],
+  "ner_extracted_values_processed": [
+   "300"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      7
+     ],
+     [
+      "table_unit",
+      3
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        12,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       25,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        26,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        14,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        15,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        11,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       15,
+       false
+      ],
+      null
+     ],
+     300.0,
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       10,
+       false
+      ],
+      null
+     ],
+     "BESTBYU",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "how many SANSUMG products are on stock",
+  "query": "SELECT SUM ( T1.quantity )  from stock AS T1 JOIN products AS T2 ON T1.product_id  =  T2.product_id JOIN manufacturers AS T3 ON T2.manufacturer_id  =  T3.manufacturer_id where T3.name  =  'SANSUMG'",
+  "query_tok": [
+   "SELECT",
+   "SUM",
+   "(",
+   "T1.quantity",
+   ")",
+   "from",
+   "stock",
+   "AS",
+   "T1",
+   "JOIN",
+   "products",
+   "AS",
+   "T2",
+   "ON",
+   "T1.product_id",
+   "=",
+   "T2.product_id",
+   "JOIN",
+   "manufacturers",
+   "AS",
+   "T3",
+   "ON",
+   "T2.manufacturer_id",
+   "=",
+   "T3.manufacturer_id",
+   "where",
+   "T3.name",
+   "=",
+   "SANSUMG"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "how",
+   "many",
+   "SANSUMG",
+   "product",
+   "are",
+   "on",
+   "stock"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "how",
+   "many",
+   "SANSUMG",
+   "products",
+   "are",
+   "on",
+   "stock"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "SANSUMG"
+   ],
+   [
+    "product"
+   ],
+   [
+    "are"
+   ],
+   [
+    "on"
+   ],
+   [
+    "stock"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "SANSUMG",
+    "JJ"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "on",
+    "IN"
+   ],
+   [
+    "stock",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "SANSUMG"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      7
+     ],
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      1
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        25,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       12,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        13,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        27,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "SANSUMG",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "which ANAPPLE product has price higher than GALAZYTAB?",
+  "query": "SELECT T1.type FROM products AS T1 JOIN manufacturers AS T2 ON T1.manufacturer_id  =  T2.manufacturer_id WHERE T1.price  >   ( SELECT T3.price from products AS T3 where T3.type  =  'GALAZYTAB' )  and T2.name  =  'ANAPPLE'",
+  "query_tok": [
+   "SELECT",
+   "T1.type",
+   "FROM",
+   "products",
+   "AS",
+   "T1",
+   "JOIN",
+   "manufacturers",
+   "AS",
+   "T2",
+   "ON",
+   "T1.manufacturer_id",
+   "=",
+   "T2.manufacturer_id",
+   "WHERE",
+   "T1.price",
+   ">",
+   "(",
+   "SELECT",
+   "T3.price",
+   "from",
+   "products",
+   "AS",
+   "T3",
+   "where",
+   "T3.type",
+   "=",
+   "GALAZYTAB",
+   ")",
+   "and",
+   "T2.name",
+   "=",
+   "ANAPPLE"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "which",
+   "ANAPPLE",
+   "product",
+   "ha",
+   "price",
+   "higher",
+   "than",
+   "GALAZYTAB",
+   "?"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "which",
+   "ANAPPLE",
+   "product",
+   "has",
+   "price",
+   "higher",
+   "than",
+   "GALAZYTAB",
+   "?"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "ANAPPLE"
+   ],
+   [
+    "product"
+   ],
+   [
+    "ha"
+   ],
+   [
+    "price"
+   ],
+   [
+    "higher"
+   ],
+   [
+    "than"
+   ],
+   [
+    "GALAZYTAB"
+   ],
+   [
+    "?"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "MORE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "ANAPPLE",
+    "NN"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "ha",
+    "NN"
+   ],
+   [
+    "price",
+    "NN"
+   ],
+   [
+    "higher",
+    "JJR"
+   ],
+   [
+    "than",
+    "IN"
+   ],
+   [
+    "GALAZYTAB",
+    "NNS"
+   ],
+   [
+    "?",
+    "."
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "GALAZYTAB",
+   "ANAPPLE"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      1
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        13,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        14,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     3,
+     [
+      0,
+      [
+       0,
+       15,
+       false
+      ],
+      null
+     ],
+     {
+      "from": {
+       "table_units": [
+        [
+         "table_unit",
+         4
+        ]
+       ],
+       "conds": []
+      },
+      "select": [
+       false,
+       [
+        [
+         0,
+         [
+          0,
+          [
+           0,
+           15,
+           false
+          ],
+          null
+         ]
+        ]
+       ]
+      ],
+      "where": [
+       [
+        false,
+        2,
+        [
+         0,
+         [
+          0,
+          14,
+          false
+         ],
+         null
+        ],
+        "GALAZYTAB",
+        null
+       ]
+      ],
+      "groupBy": [],
+      "having": [],
+      "orderBy": [],
+      "limit": null,
+      "intersect": null,
+      "union": null,
+      "except": null
+     },
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "ANAPPLE",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what is total amount of sales for Richard",
+  "query": "SELECT SUM ( T1.sum_total )  FROM sales AS T1 join customers AS T2 ON T1.customer_id  =  T2.customer_id where T2.name  =  'Richard'",
+  "query_tok": [
+   "SELECT",
+   "SUM",
+   "(",
+   "T1.sum_total",
+   ")",
+   "FROM",
+   "sales",
+   "AS",
+   "T1",
+   "join",
+   "customers",
+   "AS",
+   "T2",
+   "ON",
+   "T1.customer_id",
+   "=",
+   "T2.customer_id",
+   "where",
+   "T2.name",
+   "=",
+   "Richard"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "is",
+   "total",
+   "amount",
+   "of",
+   "sale",
+   "for",
+   "richard"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "what",
+   "is",
+   "total",
+   "amount",
+   "of",
+   "sales",
+   "for",
+   "Richard"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "is"
+   ],
+   [
+    "total"
+   ],
+   [
+    "amount"
+   ],
+   [
+    "of"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "for"
+   ],
+   [
+    "richard"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "is",
+    "VBZ"
+   ],
+   [
+    "total",
+    "JJ"
+   ],
+   [
+    "amount",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "for",
+    "IN"
+   ],
+   [
+    "richard",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Richard"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        17,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       1,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        21,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       3,
+       false
+      ],
+      null
+     ],
+     "Richard",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "show me customer names",
+  "query": "SELECT T1.name FROM customers AS T1",
+  "query_tok": [
+   "SELECT",
+   "T1.name",
+   "FROM",
+   "customers",
+   "AS",
+   "T1"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "show",
+   "me",
+   "customer",
+   "name"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "show",
+   "me",
+   "customer",
+   "names"
+  ],
+  "question_arg": [
+   [
+    "show"
+   ],
+   [
+    "me"
+   ],
+   [
+    "customer"
+   ],
+   [
+    "name"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "col"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "show",
+    "VB"
+   ],
+   [
+    "me",
+    "PRP"
+   ],
+   [
+    "customer",
+    "NN"
+   ],
+   [
+    "name",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        3,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "What are the phone numbers of the customers?",
+  "query": "SELECT T1.phone_nr FROM customers AS T1",
+  "query_tok": [
+   "SELECT",
+   "T1.phone_nr",
+   "FROM",
+   "customers",
+   "AS",
+   "T1"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "are",
+   "phone",
+   "number",
+   "of",
+   "customer",
+   "?"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "What",
+   "are",
+   "the",
+   "phone",
+   "numbers",
+   "of",
+   "the",
+   "customers",
+   "?"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "are"
+   ],
+   [
+    "phone"
+   ],
+   [
+    "number"
+   ],
+   [
+    "of"
+   ],
+   [
+    "customer"
+   ],
+   [
+    "?"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WDT"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "phone",
+    "NN"
+   ],
+   [
+    "number",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "customer",
+    "NN"
+   ],
+   [
+    "?",
+    "."
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        2,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "show customer names and shop names where customer bought products and dates of purchase",
+  "query": "SELECT T1.name, T3.name, T2.date FROM customers AS T1 JOIN sales AS T2 ON T1.customer_id  =  T2.customer_id JOIN shops AS T3 ON T2.shop_id  =  T3.shop_id",
+  "query_tok": [
+   "SELECT",
+   "T1.name,",
+   "T3.name,",
+   "T2.date",
+   "FROM",
+   "customers",
+   "AS",
+   "T1",
+   "JOIN",
+   "sales",
+   "AS",
+   "T2",
+   "ON",
+   "T1.customer_id",
+   "=",
+   "T2.customer_id",
+   "JOIN",
+   "shops",
+   "AS",
+   "T3",
+   "ON",
+   "T2.shop_id",
+   "=",
+   "T3.shop_id"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "show",
+   "customer",
+   "name",
+   "and",
+   "shop",
+   "name",
+   "where",
+   "customer",
+   "bought",
+   "product",
+   "and",
+   "date",
+   "of",
+   "purchase"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "show",
+   "customer",
+   "names",
+   "and",
+   "shop",
+   "names",
+   "where",
+   "customer",
+   "bought",
+   "products",
+   "and",
+   "dates",
+   "of",
+   "purchase"
+  ],
+  "question_arg": [
+   [
+    "show"
+   ],
+   [
+    "customer"
+   ],
+   [
+    "name"
+   ],
+   [
+    "and"
+   ],
+   [
+    "shop"
+   ],
+   [
+    "name"
+   ],
+   [
+    "where"
+   ],
+   [
+    "customer"
+   ],
+   [
+    "bought"
+   ],
+   [
+    "product"
+   ],
+   [
+    "and"
+   ],
+   [
+    "date"
+   ],
+   [
+    "of"
+   ],
+   [
+    "purchase"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "show",
+    "NN"
+   ],
+   [
+    "customer",
+    "NN"
+   ],
+   [
+    "name",
+    "NN"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "shop",
+    "NN"
+   ],
+   [
+    "name",
+    "NN"
+   ],
+   [
+    "where",
+    "WRB"
+   ],
+   [
+    "customer",
+    "NN"
+   ],
+   [
+    "bought",
+    "VBD"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "date",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "purchase",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ],
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      3
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       17,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        19,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        3,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        10,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        20,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "How many IFONE are sold in a shop in New York?",
+  "query": "SELECT SUM ( T2.quantity )  FROM products AS T1 join sales_details AS T2 ON T1.product_id  =  T2.product_id JOIN sales AS T3 ON T2.sales_id  =  T3.sales_id JOIN shops AS T4 ON T3.shop_id  =  T4.shop_id where T4.address  =  'New York' and T1.type  =  'IFONE'",
+  "query_tok": [
+   "SELECT",
+   "SUM",
+   "(",
+   "T2.quantity",
+   ")",
+   "FROM",
+   "products",
+   "AS",
+   "T1",
+   "join",
+   "sales_details",
+   "AS",
+   "T2",
+   "ON",
+   "T1.product_id",
+   "=",
+   "T2.product_id",
+   "JOIN",
+   "sales",
+   "AS",
+   "T3",
+   "ON",
+   "T2.sales_id",
+   "=",
+   "T3.sales_id",
+   "JOIN",
+   "shops",
+   "AS",
+   "T4",
+   "ON",
+   "T3.shop_id",
+   "=",
+   "T4.shop_id",
+   "where",
+   "T4.address",
+   "=",
+   "New",
+   "York",
+   "and",
+   "T1.type",
+   "=",
+   "IFONE"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "how",
+   "many",
+   "IFONE",
+   "are",
+   "sold",
+   "in",
+   "a",
+   "shop",
+   "in",
+   "new",
+   "york",
+   "?"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "How",
+   "many",
+   "IFONE",
+   "are",
+   "sold",
+   "in",
+   "a",
+   "shop",
+   "in",
+   "New",
+   "York",
+   "?"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "IFONE"
+   ],
+   [
+    "are"
+   ],
+   [
+    "sold"
+   ],
+   [
+    "in"
+   ],
+   [
+    "a"
+   ],
+   [
+    "shop"
+   ],
+   [
+    "in"
+   ],
+   [
+    "new"
+   ],
+   [
+    "york"
+   ],
+   [
+    "?"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "IFONE",
+    "NN"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "sold",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "a",
+    "DT"
+   ],
+   [
+    "shop",
+    "NN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "new",
+    "JJ"
+   ],
+   [
+    "york",
+    "NN"
+   ],
+   [
+    "?",
+    "."
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "New York",
+   "IFONE"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      4
+     ],
+     [
+      "table_unit",
+      6
+     ],
+     [
+      "table_unit",
+      5
+     ],
+     [
+      "table_unit",
+      3
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        12,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       22,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        23,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       16,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        19,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        24,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       11,
+       false
+      ],
+      null
+     ],
+     "New York",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "IFONE",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "show me customer name, phone number and address",
+  "query": "SELECT T1.name, T1.phone_nr, T1.address FROM customers AS T1",
+  "query_tok": [
+   "SELECT",
+   "T1.name,",
+   "T1.phone_nr,",
+   "T1.address",
+   "FROM",
+   "customers",
+   "AS",
+   "T1"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "show",
+   "me",
+   "customer",
+   "name",
+   ",",
+   "phone",
+   "number",
+   "and",
+   "address"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "show",
+   "me",
+   "customer",
+   "name",
+   ",",
+   "phone",
+   "number",
+   "and",
+   "address"
+  ],
+  "question_arg": [
+   [
+    "show"
+   ],
+   [
+    "me"
+   ],
+   [
+    "customer"
+   ],
+   [
+    "name"
+   ],
+   [
+    ","
+   ],
+   [
+    "phone"
+   ],
+   [
+    "number"
+   ],
+   [
+    "and"
+   ],
+   [
+    "address"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "col"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "show",
+    "VB"
+   ],
+   [
+    "me",
+    "PRP"
+   ],
+   [
+    "customer",
+    "NN"
+   ],
+   [
+    "name",
+    "NN"
+   ],
+   [
+    ",",
+    ","
+   ],
+   [
+    "phone",
+    "NN"
+   ],
+   [
+    "number",
+    "NN"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "address",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        3,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        2,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        4,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "how many products have price higher than 500",
+  "query": "SELECT COUNT ( T1.type )  FROM products AS T1 where T1.price  >  500",
+  "query_tok": [
+   "SELECT",
+   "COUNT",
+   "(",
+   "T1.type",
+   ")",
+   "FROM",
+   "products",
+   "AS",
+   "T1",
+   "where",
+   "T1.price",
+   ">",
+   "500"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "how",
+   "many",
+   "product",
+   "have",
+   "price",
+   "higher",
+   "than",
+   "500"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "how",
+   "many",
+   "products",
+   "have",
+   "price",
+   "higher",
+   "than",
+   "500"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "product"
+   ],
+   [
+    "have"
+   ],
+   [
+    "price"
+   ],
+   [
+    "higher"
+   ],
+   [
+    "than"
+   ],
+   [
+    "500"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "col"
+   ],
+   [
+    "MORE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "value"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "product",
+    "NN"
+   ],
+   [
+    "have",
+    "VB"
+   ],
+   [
+    "price",
+    "NN"
+   ],
+   [
+    "higher",
+    "JJR"
+   ],
+   [
+    "than",
+    "IN"
+   ],
+   [
+    "500",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "500"
+  ],
+  "ner_extracted_values_processed": [
+   "500"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      4
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      3,
+      [
+       0,
+       [
+        0,
+        14,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     3,
+     [
+      0,
+      [
+       0,
+       15,
+       false
+      ],
+      null
+     ],
+     500.0,
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "show me total amound of sales for each shop id",
+  "query": "SELECT SUM ( T1.SUM_TOTAL ) ,T1.shop_id FROM sales AS T1 group by T1.shop_id",
+  "query_tok": [
+   "SELECT",
+   "SUM",
+   "(",
+   "T1.SUM_TOTAL",
+   ")",
+   ",T1.shop_id",
+   "FROM",
+   "sales",
+   "AS",
+   "T1",
+   "group",
+   "by",
+   "T1.shop_id"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "show",
+   "me",
+   "total",
+   "amound",
+   "of",
+   "sale",
+   "for",
+   "each",
+   "shop",
+   "i",
+   "d"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "show",
+   "me",
+   "total",
+   "amound",
+   "of",
+   "sales",
+   "for",
+   "each",
+   "shop",
+   "i",
+   "d"
+  ],
+  "question_arg": [
+   [
+    "show"
+   ],
+   [
+    "me"
+   ],
+   [
+    "total"
+   ],
+   [
+    "amound"
+   ],
+   [
+    "of"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "for"
+   ],
+   [
+    "each"
+   ],
+   [
+    "shop"
+   ],
+   [
+    "i"
+   ],
+   [
+    "d"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "show",
+    "VB"
+   ],
+   [
+    "me",
+    "PRP"
+   ],
+   [
+    "total",
+    "JJ"
+   ],
+   [
+    "amound",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "for",
+    "IN"
+   ],
+   [
+    "each",
+    "DT"
+   ],
+   [
+    "shop",
+    "NN"
+   ],
+   [
+    "i",
+    "NN"
+   ],
+   [
+    "d",
+    "VBP"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      5
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      4,
+      [
+       0,
+       [
+        0,
+        21,
+        false
+       ],
+       null
+      ]
+     ],
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        19,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [],
+   "groupBy": [
+    [
+     0,
+     19,
+     false
+    ]
+   ],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what manufacturer manufactures IFONE",
+  "query": "SELECT T1.name FROM manufacturers AS T1 JOIN products as T2 ON T1.manufacturer_id  =  T2.manufacturer_id WHERE T2.type  =  'IFONE'",
+  "query_tok": [
+   "SELECT",
+   "T1.name",
+   "FROM",
+   "manufacturers",
+   "AS",
+   "T1",
+   "JOIN",
+   "products",
+   "as",
+   "T2",
+   "ON",
+   "T1.manufacturer_id",
+   "=",
+   "T2.manufacturer_id",
+   "WHERE",
+   "T2.type",
+   "=",
+   "IFONE"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "manufacturer",
+   "manufacture",
+   "IFONE"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "what",
+   "manufacturer",
+   "manufactures",
+   "IFONE"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "manufacturer"
+   ],
+   [
+    "manufacture"
+   ],
+   [
+    "IFONE"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "manufacturer",
+    "NN"
+   ],
+   [
+    "manufacture",
+    "NN"
+   ],
+   [
+    "IFONE",
+    "NN"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "IFONE"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      1
+     ],
+     [
+      "table_unit",
+      4
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        5,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       13,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        6,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "IFONE",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what shop does stock SURFAS?",
+  "query": "SELECT T1.name FROM shops AS T1 JOIN stock AS T2 ON T1.shop_id  =  T2.shop_id JOIN products AS T3 ON T2.product_id  =  T3.product_id WHERE T3.type  =  'SURFAS'",
+  "query_tok": [
+   "SELECT",
+   "T1.name",
+   "FROM",
+   "shops",
+   "AS",
+   "T1",
+   "JOIN",
+   "stock",
+   "AS",
+   "T2",
+   "ON",
+   "T1.shop_id",
+   "=",
+   "T2.shop_id",
+   "JOIN",
+   "products",
+   "AS",
+   "T3",
+   "ON",
+   "T2.product_id",
+   "=",
+   "T3.product_id",
+   "WHERE",
+   "T3.type",
+   "=",
+   "SURFAS"
+  ],
+  "db_id": "wh_saf",
+  "question_toks": [
+   "what",
+   "shop",
+   "doe",
+   "stock",
+   "SURFAS",
+   "?"
+  ],
+  "names": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "name",
+   "vendor id",
+   "name",
+   "shop id",
+   "name",
+   "address",
+   "product id",
+   "manufacturer id",
+   "type",
+   "price",
+   "sales id",
+   "customer id",
+   "vendor id",
+   "shop id",
+   "date",
+   "sum total",
+   "product id",
+   "sales id",
+   "quantity",
+   "product id",
+   "shop id",
+   "quantity"
+  ],
+  "table_names": [
+   "customers",
+   "manufacturers",
+   "vendors",
+   "shops",
+   "products",
+   "sales",
+   "sales details",
+   "stock"
+  ],
+  "col_set": [
+   "*",
+   "customer id",
+   "phone nr",
+   "name",
+   "address",
+   "manufacturer id",
+   "vendor id",
+   "shop id",
+   "product id",
+   "type",
+   "price",
+   "sales id",
+   "date",
+   "sum total",
+   "quantity"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   6,
+   6,
+   6,
+   7,
+   7,
+   7
+  ],
+  "keys": {
+   "13": 5,
+   "5": 5,
+   "17": 1,
+   "1": 1,
+   "18": 7,
+   "7": 7,
+   "19": 9,
+   "9": 9,
+   "22": 22,
+   "12": 12,
+   "23": 16,
+   "16": 16,
+   "25": 25,
+   "26": 9
+  },
+  "origin_question_toks": [
+   "what",
+   "shop",
+   "does",
+   "stock",
+   "SURFAS",
+   "?"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "shop"
+   ],
+   [
+    "doe"
+   ],
+   [
+    "stock"
+   ],
+   [
+    "SURFAS"
+   ],
+   [
+    "?"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "shop",
+    "NN"
+   ],
+   [
+    "doe",
+    "NN"
+   ],
+   [
+    "stock",
+    "NN"
+   ],
+   [
+    "SURFAS",
+    "NN"
+   ],
+   [
+    "?",
+    "."
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "SURFAS"
+  ],
+  "ner_extracted_values_processed": [],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      3
+     ],
+     [
+      "table_unit",
+      7
+     ],
+     [
+      "table_unit",
+      4
+     ]
+    ],
+    "conds": [
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        9,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       26,
+       false
+      ],
+      null
+     ],
+     "and",
+     [
+      false,
+      2,
+      [
+       0,
+       [
+        0,
+        25,
+        false
+       ],
+       null
+      ],
+      [
+       0,
+       12,
+       false
+      ],
+      null
+     ]
+    ]
+   },
+   "select": [
+    false,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        10,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       14,
+       false
+      ],
+      null
+     ],
+     "SURFAS",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ }
+]

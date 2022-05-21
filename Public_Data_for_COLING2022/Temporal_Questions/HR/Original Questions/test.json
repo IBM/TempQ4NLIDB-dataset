@@ -1,0 +1,6446 @@
+[
+ {
+  "question": "Which Sales employees were hired in 2012",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Sales' and EMPLOYEE.HIREDATE  >=  '2012-01-01' and EMPLOYEE.HIREDATE  <=  '2012-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2012-01-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "2012-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "sale",
+   "employee",
+   "were",
+   "hired",
+   "in",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "Sales",
+   "employees",
+   "were",
+   "hired",
+   "in",
+   "2012"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "were"
+   ],
+   [
+    "hired"
+   ],
+   [
+    "in"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "hired",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "2012",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Sales",
+   "2012-01-01",
+   "2012-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2012"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2012-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2012-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Which Manufacturing employees retired in 2016",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Manufacturing' and EMPLOYEE.LEAVEDATE  >=  '2016-01-01' and EMPLOYEE.LEAVEDATE  <=  '2016-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Manufacturing",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2016-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2016-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "manufacturing",
+   "employee",
+   "retired",
+   "in",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "Manufacturing",
+   "employees",
+   "retired",
+   "in",
+   "2016"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "manufacturing"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "retired"
+   ],
+   [
+    "in"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "manufacturing",
+    "VBG"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "retired",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "2016",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Manufacturing",
+   "2016-01-01",
+   "2016-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2016"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Manufacturing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2016-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2016-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Which employees were recruited between 2000 and 2020",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.HIREDATE  >=  '2000-01-01' and EMPLOYEE.HIREDATE  <=  '2020-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2000-01-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "2020-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "employee",
+   "were",
+   "recruited",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "employees",
+   "were",
+   "recruited",
+   "between",
+   "2000",
+   "and",
+   "2020"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "were"
+   ],
+   [
+    "recruited"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "recruited",
+    "VBN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2000",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2020",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2000-01-01",
+   "2020-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2000",
+   "2020"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2000-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2020-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "how many Manufacturing employees retired between 2000 and 2001",
+  "query": "select count  ( distinct EMPLOYEE.EMPNO )  from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Manufacturing' and EMPLOYEE.LEAVEDATE  >=  '2000-01-01' and EMPLOYEE.LEAVEDATE  <=  '2001-12-31'",
+  "query_tok": [
+   "select",
+   "count",
+   "(",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   ")",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Manufacturing",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2000-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2001-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "how",
+   "many",
+   "manufacturing",
+   "employee",
+   "retired",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "how",
+   "many",
+   "Manufacturing",
+   "employees",
+   "retired",
+   "between",
+   "2000",
+   "and",
+   "2001"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "manufacturing"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "retired"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "manufacturing",
+    "NN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "retired",
+    "VBD"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2000",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2001",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Manufacturing",
+   "2000-01-01",
+   "2001-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2000",
+   "2001"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      3,
+      [
+       0,
+       [
+        0,
+        1,
+        true
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Manufacturing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2000-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2001-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Which employees joined in Sales department since September 2007",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Sales' and EMPLOYEE.HIREDATE  >=  '2007-09-01'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2007-09-01"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "employee",
+   "joined",
+   "in",
+   "sale",
+   "department",
+   "since",
+   "september",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "employees",
+   "joined",
+   "in",
+   "Sales",
+   "department",
+   "since",
+   "September",
+   "2007"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "joined"
+   ],
+   [
+    "in"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "department"
+   ],
+   [
+    "since"
+   ],
+   [
+    "september"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "joined",
+    "VBD"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "since",
+    "IN"
+   ],
+   [
+    "september",
+    "NN"
+   ],
+   [
+    "2007",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Sales",
+   "2007-09-01"
+  ],
+  "ner_extracted_values_processed": [
+   "2007"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2007-09-01",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Which employees left Manufacturing department between 1990 and 2000",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Manufacturing' and EMPLOYEE.LEAVEDATE  >=  '1990-01-01' and EMPLOYEE.LEAVEDATE  <=  '2000-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Manufacturing",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "1990-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2000-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "employee",
+   "left",
+   "manufacturing",
+   "department",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "employees",
+   "left",
+   "Manufacturing",
+   "department",
+   "between",
+   "1990",
+   "and",
+   "2000"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "left"
+   ],
+   [
+    "manufacturing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "left",
+    "VBD"
+   ],
+   [
+    "manufacturing",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "1990",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2000",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Manufacturing",
+   "1990-01-01",
+   "2000-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "1990",
+   "2000"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Manufacturing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "1990-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2000-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who were recruited in Marketing department since March 2012",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Marketing' and EMPLOYEE.HIREDATE  >=  '2012-03-01'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Marketing",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2012-03-01"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "were",
+   "recruited",
+   "in",
+   "marketing",
+   "department",
+   "since",
+   "march",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "were",
+   "recruited",
+   "in",
+   "Marketing",
+   "department",
+   "since",
+   "March",
+   "2012"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "were"
+   ],
+   [
+    "recruited"
+   ],
+   [
+    "in"
+   ],
+   [
+    "marketing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "since"
+   ],
+   [
+    "march"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "recruited",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "marketing",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "since",
+    "IN"
+   ],
+   [
+    "march",
+    "NN"
+   ],
+   [
+    "2012",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Marketing",
+   "2012-03-01"
+  ],
+  "ner_extracted_values_processed": [
+   "2012"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Marketing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2012-03-01",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who retired in 2000",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.LEAVEDATE  >=  '2000-01-01' and EMPLOYEE.LEAVEDATE  <=  '2000-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2000-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2000-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "retired",
+   "in",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "retired",
+   "in",
+   "2000"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "retired"
+   ],
+   [
+    "in"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "retired",
+    "VBD"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "2000",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2000-01-01",
+   "2000-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2000"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2000-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2000-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who were hired in Sales department from 1900 and 2000",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Sales' and EMPLOYEE.HIREDATE  >=  '1900-01-01' and EMPLOYEE.HIREDATE  <=  '2000-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "1900-01-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "2000-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "were",
+   "hired",
+   "in",
+   "sale",
+   "department",
+   "from",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "were",
+   "hired",
+   "in",
+   "Sales",
+   "department",
+   "from",
+   "1900",
+   "and",
+   "2000"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "were"
+   ],
+   [
+    "hired"
+   ],
+   [
+    "in"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "department"
+   ],
+   [
+    "from"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "hired",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "from",
+    "IN"
+   ],
+   [
+    "1900",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2000",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Sales",
+   "1900-01-01",
+   "2000-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "1900",
+   "2000"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "1900-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2000-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who left Manufacturing department between 2000 and 2005",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Manufacturing' and EMPLOYEE.LEAVEDATE  >=  '2000-01-01' and EMPLOYEE.LEAVEDATE  <=  '2005-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Manufacturing",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2000-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2005-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "left",
+   "manufacturing",
+   "department",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "left",
+   "Manufacturing",
+   "department",
+   "between",
+   "2000",
+   "and",
+   "2005"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "left"
+   ],
+   [
+    "manufacturing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "left",
+    "VBD"
+   ],
+   [
+    "manufacturing",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2000",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2005",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Manufacturing",
+   "2000-01-01",
+   "2005-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2000",
+   "2005"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Manufacturing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2000-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2005-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who joined Administration department in 4th quarter of 2014",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Administration' and EMPLOYEE.HIREDATE  >=  '2014-10-01' and EMPLOYEE.HIREDATE  <=  '2014-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Administration",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2014-10-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "2014-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "joined",
+   "administration",
+   "department",
+   "in",
+   "4th",
+   "quarter",
+   "of",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "joined",
+   "Administration",
+   "department",
+   "in",
+   "4th",
+   "quarter",
+   "of",
+   "2014"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "joined"
+   ],
+   [
+    "administration"
+   ],
+   [
+    "department"
+   ],
+   [
+    "in"
+   ],
+   [
+    "4th"
+   ],
+   [
+    "quarter"
+   ],
+   [
+    "of"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "joined",
+    "VBD"
+   ],
+   [
+    "administration",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "4th",
+    "CD"
+   ],
+   [
+    "quarter",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "2014",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Administration",
+   "2014-10-01",
+   "2014-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2014"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Administration",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2014-10-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2014-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "how many Sales employees left since December 2016",
+  "query": "select count  ( distinct EMPLOYEE.EMPNO )  from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Sales' and EMPLOYEE.LEAVEDATE  >=  '2016-12-01'",
+  "query_tok": [
+   "select",
+   "count",
+   "(",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   ")",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2016-12-01"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "how",
+   "many",
+   "sale",
+   "employee",
+   "left",
+   "since",
+   "december",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "how",
+   "many",
+   "Sales",
+   "employees",
+   "left",
+   "since",
+   "December",
+   "2016"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "left"
+   ],
+   [
+    "since"
+   ],
+   [
+    "december"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "left",
+    "VBD"
+   ],
+   [
+    "since",
+    "IN"
+   ],
+   [
+    "december",
+    "NN"
+   ],
+   [
+    "2016",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Sales",
+   "2016-12-01"
+  ],
+  "ner_extracted_values_processed": [
+   "2016"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      3,
+      [
+       0,
+       [
+        0,
+        1,
+        true
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2016-12-01",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "how many employees were hired in Sales department in the second quarter of 2012",
+  "query": "select count  ( distinct EMPLOYEE.EMPNO )  from EMPLOYEE where EMPLOYEE.HIREDATE  >=  '2012-04-01' and EMPLOYEE.HIREDATE  <=  '2012-06-30' and EMPLOYEE.DPTNAME  =  'Sales'",
+  "query_tok": [
+   "select",
+   "count",
+   "(",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   ")",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2012-04-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "2012-06-30",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "how",
+   "many",
+   "employee",
+   "were",
+   "hired",
+   "in",
+   "sale",
+   "department",
+   "in",
+   "second",
+   "quarter",
+   "of",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "how",
+   "many",
+   "employees",
+   "were",
+   "hired",
+   "in",
+   "Sales",
+   "department",
+   "in",
+   "the",
+   "second",
+   "quarter",
+   "of",
+   "2012"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "were"
+   ],
+   [
+    "hired"
+   ],
+   [
+    "in"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "department"
+   ],
+   [
+    "in"
+   ],
+   [
+    "second"
+   ],
+   [
+    "quarter"
+   ],
+   [
+    "of"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "hired",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "second",
+    "JJ"
+   ],
+   [
+    "quarter",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "2012",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2012-04-01",
+   "2012-06-30",
+   "Sales"
+  ],
+  "ner_extracted_values_processed": [
+   "2012"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      3,
+      [
+       0,
+       [
+        0,
+        1,
+        true
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2012-04-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2012-06-30",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "what employees retired from Marketing department from 2002 to 2003",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.LEAVEDATE  >=  '2002-01-01' and EMPLOYEE.LEAVEDATE  <=  '2003-12-31' and EMPLOYEE.DPTNAME  =  'Marketing'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2002-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2003-12-31",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Marketing"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "what",
+   "employee",
+   "retired",
+   "from",
+   "marketing",
+   "department",
+   "from",
+   "year",
+   "to",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "what",
+   "employees",
+   "retired",
+   "from",
+   "Marketing",
+   "department",
+   "from",
+   "2002",
+   "to",
+   "2003"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "retired"
+   ],
+   [
+    "from"
+   ],
+   [
+    "marketing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "from"
+   ],
+   [
+    "year"
+   ],
+   [
+    "to"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WP"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "retired",
+    "VBD"
+   ],
+   [
+    "from",
+    "IN"
+   ],
+   [
+    "marketing",
+    "VBG"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "from",
+    "IN"
+   ],
+   [
+    "2002",
+    "CD"
+   ],
+   [
+    "to",
+    "TO"
+   ],
+   [
+    "2003",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2002-01-01",
+   "2003-12-31",
+   "Marketing"
+  ],
+  "ner_extracted_values_processed": [
+   "2002",
+   "2003"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2002-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2003-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Marketing",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who were hired in Marketing department between 2000 and 2010",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Marketing' and EMPLOYEE.HIREDATE  >=  '2000-01-01' and EMPLOYEE.HIREDATE  <=  '2010-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Marketing",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2000-01-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "2010-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "were",
+   "hired",
+   "in",
+   "marketing",
+   "department",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "were",
+   "hired",
+   "in",
+   "Marketing",
+   "department",
+   "between",
+   "2000",
+   "and",
+   "2010"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "were"
+   ],
+   [
+    "hired"
+   ],
+   [
+    "in"
+   ],
+   [
+    "marketing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "hired",
+    "VBN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "marketing",
+    "VBG"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2000",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2010",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Marketing",
+   "2000-01-01",
+   "2010-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2000",
+   "2010"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Marketing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2000-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2010-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who started working in Manufacturing department since 2011",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.HIREDATE  >=  '2011-01-01' and EMPLOYEE.DPTNAME  =  'Manufacturing'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "2011-01-01",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Manufacturing"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "started",
+   "working",
+   "in",
+   "manufacturing",
+   "department",
+   "since",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "started",
+   "working",
+   "in",
+   "Manufacturing",
+   "department",
+   "since",
+   "2011"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "started"
+   ],
+   [
+    "working"
+   ],
+   [
+    "in"
+   ],
+   [
+    "manufacturing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "since"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "started",
+    "VBD"
+   ],
+   [
+    "working",
+    "VBG"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "manufacturing",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "since",
+    "IN"
+   ],
+   [
+    "2011",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "2011-01-01",
+   "Manufacturing"
+  ],
+  "ner_extracted_values_processed": [
+   "2011"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2011-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Manufacturing",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Who departed from Marketing department between 2010 and 2015",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Marketing' and EMPLOYEE.LEAVEDATE  >=  '2010-01-01' and EMPLOYEE.LEAVEDATE  <=  '2015-12-31'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Marketing",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2010-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "=",
+   "2015-12-31"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "who",
+   "departed",
+   "from",
+   "marketing",
+   "department",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Who",
+   "departed",
+   "from",
+   "Marketing",
+   "department",
+   "between",
+   "2010",
+   "and",
+   "2015"
+  ],
+  "question_arg": [
+   [
+    "who"
+   ],
+   [
+    "departed"
+   ],
+   [
+    "from"
+   ],
+   [
+    "marketing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "departed",
+    "VBD"
+   ],
+   [
+    "from",
+    "IN"
+   ],
+   [
+    "marketing",
+    "VBG"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "2010",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "2015",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Marketing",
+   "2010-01-01",
+   "2015-12-31"
+  ],
+  "ner_extracted_values_processed": [
+   "2010",
+   "2015"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Marketing",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2010-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2015-12-31",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "What are the names of employees who joined in Sales department before 2000 and retired since 2016",
+  "query": "select distinct EMPLOYEE.EMPNAME from EMPLOYEE where EMPLOYEE.DPTNAME  =  'Sales' and EMPLOYEE.HIREDATE  <  '2000-01-01' and EMPLOYEE.LEAVEDATE  >=  '2016-01-01'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNAME",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "2000-01-01",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "=",
+   "2016-01-01"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "what",
+   "are",
+   "name",
+   "of",
+   "employee",
+   "who",
+   "joined",
+   "in",
+   "sale",
+   "department",
+   "before",
+   "year",
+   "and",
+   "retired",
+   "since",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "What",
+   "are",
+   "the",
+   "names",
+   "of",
+   "employees",
+   "who",
+   "joined",
+   "in",
+   "Sales",
+   "department",
+   "before",
+   "2000",
+   "and",
+   "retired",
+   "since",
+   "2016"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "are"
+   ],
+   [
+    "name"
+   ],
+   [
+    "of"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "who"
+   ],
+   [
+    "joined"
+   ],
+   [
+    "in"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "department"
+   ],
+   [
+    "before"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "retired"
+   ],
+   [
+    "since"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WDT"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "name",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "joined",
+    "VBD"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "before",
+    "IN"
+   ],
+   [
+    "2000",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "retired",
+    "VBD"
+   ],
+   [
+    "since",
+    "IN"
+   ],
+   [
+    "2016",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "Sales",
+   "2000-01-01",
+   "2016-01-01"
+  ],
+  "ner_extracted_values_processed": [
+   "2000",
+   "2016"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        2,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ],
+    "and",
+    [
+     false,
+     4,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "2000-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2016-01-01",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "What are the names of employees who started working in Marketing department in 1977 and left after 2010",
+  "query": "select distinct EMPLOYEE.EMPNAME from EMPLOYEE where EMPLOYEE.HIREDATE  >=  '1977-01-01' and EMPLOYEE.HIREDATE  <=  '1977-12-31' and EMPLOYEE.LEAVEDATE  >  '2010-12-31' and EMPLOYEE.DPTNAME  =  'Marketing'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNAME",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "=",
+   "1977-01-01",
+   "and",
+   "EMPLOYEE.HIREDATE",
+   "<",
+   "=",
+   "1977-12-31",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   ">",
+   "2010-12-31",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Marketing"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "what",
+   "are",
+   "name",
+   "of",
+   "employee",
+   "who",
+   "started",
+   "working",
+   "in",
+   "marketing",
+   "department",
+   "in",
+   "year",
+   "and",
+   "left",
+   "after",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "What",
+   "are",
+   "the",
+   "names",
+   "of",
+   "employees",
+   "who",
+   "started",
+   "working",
+   "in",
+   "Marketing",
+   "department",
+   "in",
+   "1977",
+   "and",
+   "left",
+   "after",
+   "2010"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "are"
+   ],
+   [
+    "name"
+   ],
+   [
+    "of"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "who"
+   ],
+   [
+    "started"
+   ],
+   [
+    "working"
+   ],
+   [
+    "in"
+   ],
+   [
+    "marketing"
+   ],
+   [
+    "department"
+   ],
+   [
+    "in"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "left"
+   ],
+   [
+    "after"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WDT"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "name",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "started",
+    "VBD"
+   ],
+   [
+    "working",
+    "VBG"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "marketing",
+    "VBG"
+   ],
+   [
+    "department",
+    "NN"
+   ],
+   [
+    "in",
+    "IN"
+   ],
+   [
+    "1977",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "left",
+    "VBD"
+   ],
+   [
+    "after",
+    "IN"
+   ],
+   [
+    "2010",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "1977-01-01",
+   "1977-12-31",
+   "2010-12-31",
+   "Marketing"
+  ],
+  "ner_extracted_values_processed": [
+   "1977",
+   "2010"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        2,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "1977-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "1977-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     3,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2010-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Marketing",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Which Sales employees have birthdays between 1970 and 1980",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.BIRTHDATE  >=  '1970-01-01' and EMPLOYEE.BIRTHDATE  <=  '1980-12-31' and EMPLOYEE.DPTNAME  =  'Sales'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.BIRTHDATE",
+   ">",
+   "=",
+   "1970-01-01",
+   "and",
+   "EMPLOYEE.BIRTHDATE",
+   "<",
+   "=",
+   "1980-12-31",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "sale",
+   "employee",
+   "have",
+   "birthday",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "Sales",
+   "employees",
+   "have",
+   "birthdays",
+   "between",
+   "1970",
+   "and",
+   "1980"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "have"
+   ],
+   [
+    "birthday"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "have",
+    "VBP"
+   ],
+   [
+    "birthday",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "1970",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "1980",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "1970-01-01",
+   "1980-12-31",
+   "Sales"
+  ],
+  "ner_extracted_values_processed": [
+   "1970",
+   "1980"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       4,
+       false
+      ],
+      null
+     ],
+     "1970-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       4,
+       false
+      ],
+      null
+     ],
+     "1980-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "Which Manufacturing employees were born after 1900",
+  "query": "select distinct EMPLOYEE.EMPNO from EMPLOYEE where EMPLOYEE.BIRTHDATE  >  '1900-12-31' and EMPLOYEE.DPTNAME  =  'Manufacturing'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.BIRTHDATE",
+   ">",
+   "1900-12-31",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Manufacturing"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "which",
+   "manufacturing",
+   "employee",
+   "were",
+   "born",
+   "after",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "Which",
+   "Manufacturing",
+   "employees",
+   "were",
+   "born",
+   "after",
+   "1900"
+  ],
+  "question_arg": [
+   [
+    "which"
+   ],
+   [
+    "manufacturing"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "were"
+   ],
+   [
+    "born"
+   ],
+   [
+    "after"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "which",
+    "WDT"
+   ],
+   [
+    "manufacturing",
+    "VBG"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "born",
+    "VBN"
+   ],
+   [
+    "after",
+    "IN"
+   ],
+   [
+    "1900",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "1900-12-31",
+   "Manufacturing"
+  ],
+  "ner_extracted_values_processed": [
+   "1900"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        1,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     3,
+     [
+      0,
+      [
+       0,
+       4,
+       false
+      ],
+      null
+     ],
+     "1900-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Manufacturing",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "How many Sales employees have birthdays between 1950 and 1975",
+  "query": "select count  ( distinct EMPLOYEE.EMPNO )  from EMPLOYEE where EMPLOYEE.BIRTHDATE  >=  '1950-01-01' and EMPLOYEE.BIRTHDATE  <=  '1975-12-31' and EMPLOYEE.DPTNAME  =  'Sales'",
+  "query_tok": [
+   "select",
+   "count",
+   "(",
+   "distinct",
+   "EMPLOYEE.EMPNO",
+   ")",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.BIRTHDATE",
+   ">",
+   "=",
+   "1950-01-01",
+   "and",
+   "EMPLOYEE.BIRTHDATE",
+   "<",
+   "=",
+   "1975-12-31",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "how",
+   "many",
+   "sale",
+   "employee",
+   "have",
+   "birthday",
+   "between",
+   "year",
+   "and",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "How",
+   "many",
+   "Sales",
+   "employees",
+   "have",
+   "birthdays",
+   "between",
+   "1950",
+   "and",
+   "1975"
+  ],
+  "question_arg": [
+   [
+    "how"
+   ],
+   [
+    "many"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "have"
+   ],
+   [
+    "birthday"
+   ],
+   [
+    "between"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "agg"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "how",
+    "WRB"
+   ],
+   [
+    "many",
+    "JJ"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "have",
+    "VBP"
+   ],
+   [
+    "birthday",
+    "NN"
+   ],
+   [
+    "between",
+    "IN"
+   ],
+   [
+    "1950",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "1975",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "1950-01-01",
+   "1975-12-31",
+   "Sales"
+  ],
+  "ner_extracted_values_processed": [
+   "1950",
+   "1975"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    false,
+    [
+     [
+      3,
+      [
+       0,
+       [
+        0,
+        1,
+        true
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     5,
+     [
+      0,
+      [
+       0,
+       4,
+       false
+      ],
+      null
+     ],
+     "1950-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     6,
+     [
+      0,
+      [
+       0,
+       4,
+       false
+      ],
+      null
+     ],
+     "1975-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ },
+ {
+  "question": "What are the names of Sales employees who were hired after 1977 and departed before 2020",
+  "query": "select distinct EMPLOYEE.EMPNAME from EMPLOYEE where EMPLOYEE.HIREDATE  >  '1977-12-31' and EMPLOYEE.LEAVEDATE  <  '2020-01-01' and EMPLOYEE.DPTNAME  =  'Sales'",
+  "query_tok": [
+   "select",
+   "distinct",
+   "EMPLOYEE.EMPNAME",
+   "from",
+   "EMPLOYEE",
+   "where",
+   "EMPLOYEE.HIREDATE",
+   ">",
+   "1977-12-31",
+   "and",
+   "EMPLOYEE.LEAVEDATE",
+   "<",
+   "2020-01-01",
+   "and",
+   "EMPLOYEE.DPTNAME",
+   "=",
+   "Sales"
+  ],
+  "db_id": "HR",
+  "question_toks": [
+   "what",
+   "are",
+   "name",
+   "of",
+   "sale",
+   "employee",
+   "who",
+   "were",
+   "hired",
+   "after",
+   "year",
+   "and",
+   "departed",
+   "before",
+   "year"
+  ],
+  "names": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "table_names": [
+   "employee"
+  ],
+  "col_set": [
+   "*",
+   "empno",
+   "empname",
+   "mgrname",
+   "birthdate",
+   "hiredate",
+   "leavedate",
+   "salary",
+   "bonus",
+   "dptname"
+  ],
+  "col_table": [
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "keys": {},
+  "origin_question_toks": [
+   "What",
+   "are",
+   "the",
+   "names",
+   "of",
+   "Sales",
+   "employees",
+   "who",
+   "were",
+   "hired",
+   "after",
+   "1977",
+   "and",
+   "departed",
+   "before",
+   "2020"
+  ],
+  "question_arg": [
+   [
+    "what"
+   ],
+   [
+    "are"
+   ],
+   [
+    "name"
+   ],
+   [
+    "of"
+   ],
+   [
+    "sale"
+   ],
+   [
+    "employee"
+   ],
+   [
+    "who"
+   ],
+   [
+    "were"
+   ],
+   [
+    "hired"
+   ],
+   [
+    "after"
+   ],
+   [
+    "year"
+   ],
+   [
+    "and"
+   ],
+   [
+    "departed"
+   ],
+   [
+    "before"
+   ],
+   [
+    "year"
+   ]
+  ],
+  "question_arg_type": [
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "table"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ],
+   [
+    "NONE"
+   ]
+  ],
+  "nltk_pos": [
+   [
+    "what",
+    "WDT"
+   ],
+   [
+    "are",
+    "VBP"
+   ],
+   [
+    "name",
+    "NN"
+   ],
+   [
+    "of",
+    "IN"
+   ],
+   [
+    "sale",
+    "NN"
+   ],
+   [
+    "employee",
+    "NN"
+   ],
+   [
+    "who",
+    "WP"
+   ],
+   [
+    "were",
+    "VBD"
+   ],
+   [
+    "hired",
+    "VBN"
+   ],
+   [
+    "after",
+    "IN"
+   ],
+   [
+    "1977",
+    "CD"
+   ],
+   [
+    "and",
+    "CC"
+   ],
+   [
+    "departed",
+    "VBD"
+   ],
+   [
+    "before",
+    "IN"
+   ],
+   [
+    "2020",
+    "CD"
+   ]
+  ],
+  "ner_extracted_values": [],
+  "values": [
+   "1977-12-31",
+   "2020-01-01",
+   "Sales"
+  ],
+  "ner_extracted_values_processed": [
+   "1977",
+   "2020"
+  ],
+  "all_values_found": "True",
+  "sql": {
+   "from": {
+    "table_units": [
+     [
+      "table_unit",
+      0
+     ]
+    ],
+    "conds": []
+   },
+   "select": [
+    true,
+    [
+     [
+      0,
+      [
+       0,
+       [
+        0,
+        2,
+        false
+       ],
+       null
+      ]
+     ]
+    ]
+   ],
+   "where": [
+    [
+     false,
+     3,
+     [
+      0,
+      [
+       0,
+       5,
+       false
+      ],
+      null
+     ],
+     "1977-12-31",
+     null
+    ],
+    "and",
+    [
+     false,
+     4,
+     [
+      0,
+      [
+       0,
+       6,
+       false
+      ],
+      null
+     ],
+     "2020-01-01",
+     null
+    ],
+    "and",
+    [
+     false,
+     2,
+     [
+      0,
+      [
+       0,
+       9,
+       false
+      ],
+      null
+     ],
+     "Sales",
+     null
+    ]
+   ],
+   "groupBy": [],
+   "having": [],
+   "orderBy": [],
+   "limit": null,
+   "intersect": null,
+   "union": null,
+   "except": null
+  }
+ }
+]
