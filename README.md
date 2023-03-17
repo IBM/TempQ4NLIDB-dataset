@@ -1,4 +1,4 @@
-# Dataset TempQ4NLIDB for the paper "Tackling Temporal Questions in Natural Language Interface to Databases"
+# Dataset TempQ4NLIDB
 
 This dataset **TempQ4NLIDB** consists of the following contents:
 
