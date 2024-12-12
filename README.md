@@ -1,4 +1,5 @@
 # Dataset TempQ4NLIDB
+Temporal aspect is one of the most challenging areas in Natural Language Interface to Databases (NLIDB). This paper addresses and examines how temporal questions being studied and supported by the research community at both levels: popular annotated dataset (eg Spider) and recent advanced models. We present a new dataset with accompanied databases supporting temporal questions in NLIDB. We experiment with two SOTA models (Picard and ValueNet) to investigate how our new dataset helps these models learn and improve performance in temporal aspect. Refer our paper [Tackling Temporal Questions in Natural Language Interface to Databases](https://aclanthology.org/2022.emnlp-industry.18.pdf) for more details.
 
 This dataset **TempQ4NLIDB** consists of the following contents:
 
