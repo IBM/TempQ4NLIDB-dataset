@@ -1194,8 +1194,15 @@ There are three variants of temporal questions:
 </pre></code>
 
 ## Citation
-
-TBA
+<pre><code>
+@inproceedings{vo2022tackling,
+  title={Tackling Temporal Questions in Natural Language Interface to Databases},
+  author={Vo, Ngoc Phuoc An and Popescu, Octavian and Manotas, Irene and Sheinin, Vadim},
+  booktitle={Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing: Industry Track},
+  pages={179--187},
+  year={2022}
+}
+</pre></code>
 
 
 
